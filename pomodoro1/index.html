@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pomodoro v1 - js pur</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="pomodoro1.js"></script>
+</head>
+<body>
+<div id="app" class="container">
+    <h2>
+        <span>Pomodoro</span>
+        <button onclick="start()">
+            <i class="fas fa-play"></i>
+        </button>
+        <button onclick="pause()">
+            <i class="fas fa-pause"></i>
+        </button>
+        <button onclick="stop()">
+            <i class="fas fa-stop"></i>
+        </button>
+    </h2>
+    <h3 id="pomodoroState"></h3>
+    <div>
+        <div>
+            <span id="min"></span>:<span id="sec"></span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
