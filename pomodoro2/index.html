@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pomodoro v1 - js pur</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="pomodoro2.js"></script>
+</head>
+<body>
+<div id="pomodoroApp" class="container">
+    <h2>
+        <span>Pomodoro</span>
+        <button @click="start()">
+            <i class="fas fa-play"></i>
+        </button>
+        <button @click="pause()">
+            <i class="fas fa-pause"></i>
+        </button>
+        <button @click="stop()">
+            <i class="fas fa-stop"></i>
+        </button>
+    </h2>
+    <h3 id="pomodoroState">{{pomodoroStateString}}</h3>
+    <div>
+        <div>
+            <span id="min">{{min}}</span>:<span id="sec">{{sec}}</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
